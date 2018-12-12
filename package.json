@@ -1,0 +1,38 @@
+{
+  "name": "testyiireact.test",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">     <a href=\"https://github.com/yiisoft\" target=\"_blank\">         <img src=\"https://avatars0.githubusercontent.com/u/993323\" height=\"100px\">     </a>     <h1 align=\"center\">Yii 2 Basic Project Template</h1>     <br> </p>",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development",
+    "start:dev": "webpack-dev-server --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap3": "^3.3.5",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "path": "^0.12.7",
+    "prerender-spa-plugin": "^3.4.0",
+    "prop-types": "^15.6.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
