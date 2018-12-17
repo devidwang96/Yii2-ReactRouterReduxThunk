@@ -23,7 +23,6 @@ export const Header = () => (
                     <div className="col-md-10 col-sm-10 col-xs-6">
                         <ul className="nav navbar-nav">
                             <li><NavLink to='/' activeClassName='menu selected' exact={true}>HOME</NavLink></li>
-                            <li><NavLink to='/zipcodes' activeClassName='menu selected'>ZIP CODES</NavLink></li>
                             <li><NavLink to='/about' activeClassName='menu selected'>ABOUT</NavLink></li>
                         </ul>
                     </div>

@@ -8,7 +8,6 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { Header } from '../Header/Header';
 import { HomePage } from '../pages/HomePage';
 import { AboutPage } from '../pages/AboutPage';
-import { ZipCodesPage } from '../pages/ZipCodesPage';
 
 
 // COMPONENT
@@ -19,7 +18,6 @@ export const AppRouter = () => (
             <Header />            
             <Switch>
                 <Route path='/' component={HomePage} exact={true} />
-                <Route path='/zipcodes' component={ZipCodesPage} />
                 <Route path='/about' component={AboutPage} />
                 <Redirect to="/" />
             </Switch>
