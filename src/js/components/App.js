@@ -1,9 +1,24 @@
-import React, { Component } from 'react'
+// IMPORT PACKAGES
 
-class App extends React.Component {
-    render() {
-        return <h1>Hello, React</h1>;
-    }
-}
+import React from 'react';
+import { Provider } from 'react-redux';
 
-export default App;
+// IMPORT STORE
+
+import { createAppStore } from '../components/state/stores/AppStore';
+
+// IMPORT COMPONENTS
+
+import { AppRouter } from './routers/AppRouter';
+
+
+
+// COMPONENT
+
+export const App = () => (
+    <Provider store={createAppStore()}>
+        <div className="container">
+            <AppRouter />
+        </div>
+    </Provider>
+);
