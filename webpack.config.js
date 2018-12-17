@@ -13,7 +13,7 @@ const cssModuleRegex = /\.module\.css$/;
 
 const getCSSModuleLocalIdent = require('react-dev-utils/getCSSModuleLocalIdent');
 
-const PrerenderSPAPlugin = require('prerender-spa-plugin');
+// const PrerenderSPAPlugin = require('prerender-spa-plugin');
 
 const getStyleLoaders = (cssOptions, preProcessor) => {
     const loaders = [
@@ -71,10 +71,10 @@ module.exports = {
                 'src/js/**/*.js',
             ]
         }),
-        new PrerenderSPAPlugin({
-            staticDir: path.join(basicPath, 'static-html'),
-            routes: ['/', '/about'],
-        })
+        // new PrerenderSPAPlugin({
+        //     staticDir: path.join(basicPath, 'static-html'),
+        //     routes: ['/', '/about'],
+        // })
     ],
     module: {
         rules: [
